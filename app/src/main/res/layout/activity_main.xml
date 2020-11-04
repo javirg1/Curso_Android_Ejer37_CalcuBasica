@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMarcador"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="right|center"
+        android:padding="5dp"
+        android:text="0"
+        android:textSize="40sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/layout_botonera">
+
+            <Button
+                android:id="@+id/btnNum7"
+                style="@style/boton_numero"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btnNum8"
+                style="@style/boton_numero"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btnNum9"
+                style="@style/boton_numero"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnOpDiv"
+                style="@style/boton_operacion"
+                android:text="/" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_botonera">
+
+            <Button
+                android:id="@+id/btnNum4"
+                style="@style/boton_numero"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btnNum5"
+                style="@style/boton_numero"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btnNum6"
+                style="@style/boton_numero"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnOpMulti"
+                style="@style/boton_operacion"
+                android:text="*" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_botonera">
+
+            <Button
+                android:id="@+id/btnNum1"
+                style="@style/boton_numero"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btnNum2"
+                style="@style/boton_numero"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btnNum3"
+                style="@style/boton_numero"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnOpResta"
+                style="@style/boton_operacion"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/layout_botonera">
+
+            <Button
+                android:id="@+id/btnNum0"
+                style="@style/boton_numero"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnOpReset"
+                style="@style/boton_operacion"
+                android:backgroundTint="@color/color_boton_ce"
+                android:text="CE" />
+
+            <Button
+                android:id="@+id/btnOpIgual"
+                style="@style/boton_operacion"
+                android:backgroundTint="@color/color_boton_igual"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/btnOpSumar"
+                style="@style/boton_operacion"
+                android:text="+" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
